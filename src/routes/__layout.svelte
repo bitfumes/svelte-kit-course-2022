@@ -1,10 +1,14 @@
 <script>
-import Footer from "../components/Footer.svelte";
-import Nav from "../components/Nav.svelte";
+	import '../app.css';
+	import Footer from '../components/Footer.svelte';
+	import Nav from '../components/Nav.svelte';
 </script>
 
 <Nav />
 
-<slot></slot>
-
+<div class="flex h-screen">
+	<div class="m-auto">
+		<slot />
+	</div>
+</div>
 <Footer />
