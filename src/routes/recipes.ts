@@ -1,7 +1,7 @@
 /** @type {import('@sveltejs/kit').Load} */
 export async function get(page) {
 	const url =
-		'https://api.spoonacular.com/recipes/complexSearch?apiKey=bab192a3416422a81990229e64d3a63';
+		'https://api.spoonacular.com/recipes/complexSearch?apiKey=bab192a34186422a81990229e64d3a63';
 
 	const res = await fetch(url);
 	const { results } = await res.json();
